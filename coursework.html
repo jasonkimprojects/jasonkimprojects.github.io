@@ -1,1 +1,216 @@
-Placeholder for my coursework and academic projects.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jason Kim</title>
+	<meta charset="utf-8">
+	<!-- Links and scripts for Bootstrap 4 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Link for Raleway from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!-- Link for Quicksand from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<style>
+		/* Raleway as default for body */
+		body {
+			font-family: 'Raleway', sans-serif;
+		}
+		.fakeimg {
+			height: 200px;
+			background: #aaa;
+		}
+		/* For the title text 'Jason Kim' */
+		.display-3 {
+			font-family: 'Quicksand', sans-serif;
+			color: white;
+			margin-bottom: 20px;
+		}
+		/* Default and hover colors for nav links */
+		.nav-link {
+			color: white;
+		}
+		.nav-link:hover {
+			color: #FFA500;
+		}
+		.jumbotron {
+			background-color: black;
+			margin-top: -30px;
+			background-image: url("img/test.jpg");
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Purple top jumbotron with my name and links to the three pages. -->
+	<div class="jumbotron jumbotron-fluid" style="text-align: center">
+		<h1 class="display-3">Jason Kim</h1>
+		<div class="container-fluid">
+			<!-- Trick to reduce bottom margin of jumbotron -->
+			<div class="row" style="margin-bottom: -30px">
+				<!-- Two filler cols of width 3 to 'center' the links as much as possible -->
+				<div class="col-lg-3"></div>
+				<div class="col-lg-2">
+					<a class="nav-link" href="#"><h3>Information</h3></a>
+				</div>
+				<div class="col-lg-2">
+					<a class="nav-link" href="#"><h3>Academics</h3></a>
+				</div>
+				<div class="col-lg-2">
+					<a class="nav-link" href="#"><h3>Projects</h3></a>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Container for rows, in order to list projects -->
+	<div class="container" style="margin-top:30px; margin-bottom: 30px">
+		<div class="row">
+			<div class="col">
+				<div class="alert alert-success">
+					<p style="margin-bottom: 0px">The following is a list of the courses I have taken at the <a href="https://umich.edu" style="color: orange">University of Michigan.</a> I have listed programming projects alongside each course where applicable. I am bound by the Engineering Honor Code at U-M not to release those projects to the public. Consequently, a brief description of the work is the furthest extent that I am able to disclose. For more information, click <a href="https://elc.engin.umich.edu/policies-and-interpretations/" style="color: orange">here.</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h1><b>Electrical Engineering &amp; Computer Science</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>388, Introduction to Computer Security</h3>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs388/" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in Python:</b></p>
+				<ul>
+					<li><p>A Vigenere deciphering tool. Uses variance in ciphertext letter frequency to estimate key length, and either simple frequency analysis or chi-square test to guess the key.</p></li>
+					<li><p>A length extension attack on MD5 hashes, and a collision attack composed of two binaries with identical MD5 hashes but wildly different behavior.</p></li>
+					<li><p>RSA signature forgery implementing Bleichenbacher’s attack.</p></li>
+					<li><p>A padding oracle attack against cipher block chaining, modeled after the vulnerability in earlier versions of TLS/SSL.</p></li>
+					<li><p>SQL injection against inadequate sanitation and hashed user input fields.</p></li>
+					<li><p>Port scanning detector using the dpkt library to parse packet captures.</p></li>
+					<li><p>Buffer overflow attacks for C programs. Encompasses shellcode, bypassing DEP and ASLR, and return oriented programming.</p></li>
+					<li><p>A fuzzer for black box testing on an instructor program that parses JSON input.</p></li>
+				</ul>
+				<p><b>Projects in JavaScript and jQuery:</b></p>
+				<ul>
+					<li><p>XSS attacks that send user data to a remote server. Implemented against increasing levels of sanitation, and coupled with CSRF attacks.</p></li>
+				</ul>
+				<p><b>Other project work:</b></p>
+				<ul>
+					<li><p>Analyzed network traffic with Wireshark to find vulnerabilities.</p></li>
+					<li><p>Wrote a phishing email to a simulated helpdesk.</p></li>
+					<li><p>A penetration test on a simulated corporate network, and digital forensics using Autopsy and various other tools. Due to the open ended nature of those projects, I am unable to disclose their components or methods.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>370, Introduction to Computer Organization</h3>
+				<p><a href="http://www.eecs.umich.edu/courses/eecs370/eecs370.s19/course/" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in C:</b></p>
+				<ul>
+					<li><p>A fictional assembly language, LC2K, was used for this course as well as a limited subset of ARMv8. LC2K resembled a limited subset of MIPS.</p></li>
+					<li><p>Basic assembler and simulator for LC2K.</p></li>
+					<li><p>Advanced assembler for LC2K with support for multiple source files and external references. Implemented a symbol table and relocation table.</p></li>
+					<li><p>Linker for multiple LC2K source files.</p></li>
+					<li><p>Pipelined simulator for LC2K. Implemented a 5-stage pipeline with forwarding to resolve data hazards and simple branch prediction and rollback for control hazards.</p></li>
+					<li><p>Cache simulator for LC2K with variable number of lines, block size, and associativity; writeback policy and LRU.</p></li>
+				</ul>
+				<p><b>Projects in Assembly:</b></p>
+				<ul>
+					<li><p>Multiplier for LC2K, which lacks a multiplication instruction. Uses long multiplication with bit shifting for speed.</p></li>
+					<li><p>Binomial coefficient calculator using stack frames and recursion.</p></li>
+				</ul>
+				<p><b>Other project work:</b></p>
+				<ul>
+					<li><p>For most (if not all) projects above, students were instructed to devise their own test cases, handwritten or randomly generated. The test cases were graded against a set of buggy instructor implementations for their ability to catch bugs.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>281, Data Structures and Algorithms</h3>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs281/syllabus" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in C++:</b></p>
+				<ul>
+					<li><p>Word morph solver. Takes a start word, end word, dictionary, and rulebook. Implemented with stacks, queues, and deques.</p></li>
+					<li><p>Mine escape solver implemented with priority queues.</p></li>
+					<li><p>Binary heap and pairing heap implementations from scratch.</p></li>
+					<li><p>Hash table implementation from scratch.</p></li>
+					<li><p>AVL balanced binary search tree implementation from scratch.</p></li>
+					<li><p>SQL simulator for a limited subset of commands. Implemented with a mix of hash tables, arrays, and maps.</p></li>
+					<li><p>Minimum spanning tree generator and traveling salesperson problem solver with heuristics. Employs backtracking and branch-and-bound designs.</p></li>
+				</ul>
+				<p><b>Other project work:</b></p>
+				<ul>
+					<li><p>For most (if not all) projects above, students were instructed to devise their own test cases, handwritten or randomly generated. The test cases were graded against a set of buggy instructor implementations for their ability to catch bugs.</p></li>
+					<li><p>Projects in this class were graded for correctness and also for performance. Runtime, peak memory usage, and memory leaks were measured.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>280, Programming and Introductory Data Structures</h3>
+				<p><a href="https://eecs280staff.github.io/eecs280.org/assets/Syllabus.pdf" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in C++:</b></p>
+				<ul>
+					<li><p>Image processing program with seam carving algorithm, which is implemented by introductory computer vision.</p></li>
+					<li><p>Euchre card game simulator. Exercise for object oriented programming, arrays, and vectors.</p></li>
+					<li><p>Reverse Polish Notation calculator with implementation from scratch for a linked list and stack.</p></li>
+					<li><p>Forum post analyzer using log-likelihood machine learning. Implemented a binary search tree from scratch for one part. Exercise for recursion.</p></li>
+				</ul>
+				<p><b>Other project work:</b></p>
+				<ul>
+					<li><p>For most (if not all) projects above, students were instructed to devise their own test cases, handwritten or randomly generated. The test cases were graded against a set of buggy instructor implementations for their ability to catch bugs.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h1><b>Engineering</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>101, Introduction to Computers and Programming</h3>
+				<p><a href="https://docs.google.com/document/d/1cXFDRDQ9VSUW5-hsEE6N7_3_iCoNwm3BYiS8EA6_F7A/edit?usp=sharing" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in MATLAB:</b></p>
+				<ul>
+					<li><p>Intro to finite element analysis</p></li>
+					<li><p>Image processing to reduce noise and detect tumors</p></li>
+					<li><p>Analyses and plots of environmental conditions</p></li>
+				</ul>
+				<p><b>Projects in C++:</b></p>
+				<ul>
+					<li><p>Braking coefficient calculator</p></li>
+					<li><p>Simple natural language processing using keyword weights to classify reviews as real or fake</p></li>
+					<li><p>Naive (nearest neighbor algorithm) traveling salesperson problem solver</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h1><b>Mathematics</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row" style="margin-top:30px">
+			<div class="col">
+				<h3>214, Applied Linear Algebra</h3>
+				<p><a href="http://dept.math.lsa.umich.edu/courses/214/syllabus.html" style="color: orange">Link to syllabus</a></p>
+				<p><b>Projects in MATLAB:</b></p>
+				<ul>
+					<li><p>Group final project - theoretical and actual runtime comparison for QR-factorization algorithms. Compared Gram-Schmidt orthonormalization, Householder reflection, and Givens rotation.</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
