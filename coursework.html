@@ -4,7 +4,7 @@
 	<title>Jason Kim</title>
 	<meta charset="utf-8">
 	<!-- Links and scripts for Bootstrap 4 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -45,6 +45,15 @@
 			height: 100%;
 			width: 100%;
 		}
+		.course {
+			margin-top: 30px;
+		}
+		.syllabus {
+			color: orange;
+		}
+		.syllabus:hover {
+			color: orange;
+		}
 	</style>
 </head>
 <body>
@@ -70,21 +79,22 @@
 	<div class="container" style="margin-top:30px; margin-bottom: 30px">
 		<div class="row">
 			<div class="col">
+				<!-- Header for coursework description -->
 				<div class="alert alert-success">
 					<p style="margin-bottom: 0px">The following is a list of the courses I have taken at the <a href="https://umich.edu" style="color: orange">University of Michigan.</a> I have listed programming projects alongside each course where applicable. I am bound by the Engineering Honor Code at U-M not to release those projects to the public. Consequently, a brief description of the work is the furthest extent that I am able to disclose. For more information, click <a href="https://elc.engin.umich.edu/policies-and-interpretations/" style="color: orange">here.</a></p>
 				</div>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h1><b>Electrical Engineering &amp; Computer Science</b></h1>
 				<hr>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>388, Introduction to Computer Security</h3>
-				<p><a href="https://www.eecs.umich.edu/courses/eecs388/" style="color: orange">Link to syllabus</a></p>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs388/" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in Python:</b></p>
 				<ul>
 					<li><p>A Vigenere deciphering tool. Uses variance in ciphertext letter frequency to estimate key length, and either simple frequency analysis or chi-square test to guess the key.</p></li>
@@ -108,10 +118,10 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>370, Introduction to Computer Organization</h3>
-				<p><a href="http://www.eecs.umich.edu/courses/eecs370/eecs370.s19/course/" style="color: orange">Link to syllabus</a></p>
+				<p><a href="http://www.eecs.umich.edu/courses/eecs370/eecs370.s19/course/" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in C:</b></p>
 				<ul>
 					<li><p>A fictional assembly language, LC2K, was used for this course as well as a limited subset of ARMv8. LC2K resembled a limited subset of MIPS.</p></li>
@@ -132,10 +142,10 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>281, Data Structures and Algorithms</h3>
-				<p><a href="https://www.eecs.umich.edu/courses/eecs281/syllabus" style="color: orange">Link to syllabus</a></p>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs281/syllabus" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in C++:</b></p>
 				<ul>
 					<li><p>Word morph solver. Takes a start word, end word, dictionary, and rulebook. Implemented with stacks, queues, and deques.</p></li>
@@ -153,10 +163,10 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>280, Programming and Introductory Data Structures</h3>
-				<p><a href="https://eecs280staff.github.io/eecs280.org/assets/Syllabus.pdf" style="color: orange">Link to syllabus</a></p>
+				<p><a href="https://eecs280staff.github.io/eecs280.org/assets/Syllabus.pdf" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in C++:</b></p>
 				<ul>
 					<li><p>Image processing program with seam carving algorithm, which is implemented by introductory computer vision.</p></li>
@@ -170,16 +180,16 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h1><b>Engineering</b></h1>
 				<hr>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>101, Introduction to Computers and Programming</h3>
-				<p><a href="https://docs.google.com/document/d/1cXFDRDQ9VSUW5-hsEE6N7_3_iCoNwm3BYiS8EA6_F7A/edit?usp=sharing" style="color: orange">Link to syllabus</a></p>
+				<p><a href="https://docs.google.com/document/d/1cXFDRDQ9VSUW5-hsEE6N7_3_iCoNwm3BYiS8EA6_F7A/edit?usp=sharing" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in MATLAB:</b></p>
 				<ul>
 					<li><p>Intro to finite element analysis</p></li>
@@ -194,16 +204,16 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h1><b>Mathematics</b></h1>
 				<hr>
 			</div>
 		</div>
-		<div class="row" style="margin-top:30px">
+		<div class="row course">
 			<div class="col">
 				<h3>214, Applied Linear Algebra</h3>
-				<p><a href="http://dept.math.lsa.umich.edu/courses/214/syllabus.html" style="color: orange">Link to syllabus</a></p>
+				<p><a href="http://dept.math.lsa.umich.edu/courses/214/syllabus.html" class="syllabus">Link to syllabus</a></p>
 				<p><b>Projects in MATLAB:</b></p>
 				<ul>
 					<li><p>Group final project - theoretical and actual runtime comparison for QR-factorization algorithms. Compared Gram-Schmidt orthonormalization, Householder reflection, and Givens rotation.</p></li>
