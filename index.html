@@ -18,10 +18,6 @@
 		body {
 			font-family: 'Raleway', sans-serif;
 		}
-		.fakeimg {
-			height: 200px;
-			background: #aaa;
-		}
 		/* For the title text 'Jason Kim' */
 		.display-3 {
 			font-family: 'Julius Sans One', sans-serif;
@@ -31,11 +27,22 @@
 			margin-right: 50px;
 		}
 		/* Default and hover colors for nav links */
-		.nav-link {
+		#nav {
 			color: white;
 		}
-		.nav-link:hover {
+		#nav:hover {
 			color: #FFA500;
+		}
+		#link {
+			background-color: #F5F5F5;
+			color: black;
+		}
+		#link:hover {
+			color: #FFA500;
+		}
+		#link-cell {
+			background-color: #F5F5F5;
+			color: black;
 		}
 		.jumbotron {
 			background-color: black;
@@ -57,13 +64,13 @@
 				<!-- Two filler cols of width 3 to 'center' the links as much as possible -->
 				<div class="col-lg-3"></div>
 				<div class="col-lg-2">
-					<a class="nav-link" href="index.html" style="color: #FFA500"><h3>Information</h3></a>
+					<a class="nav-link" id="nav" href="index.html" style="color: #FFA500"><h3>Information</h3></a>
 				</div>
 				<div class="col-lg-2">
-					<a class="nav-link" href="coursework.html"><h3>Academics</h3></a>
+					<a class="nav-link" id="nav" href="coursework.html"><h3>Academics</h3></a>
 				</div>
 				<div class="col-lg-2">
-					<a class="nav-link" href="projects.html"><h3>Projects</h3></a>
+					<a class="nav-link" id="nav" href="projects.html"><h3>Projects</h3></a>
 				</div>
 				<div class="col-lg-3"></div>
 			</div>
@@ -72,50 +79,47 @@
 
 <!-- Stuff to work on for tomorrow -->
 
-<div class="container" style="margin-top:30px">
+<div class="container" style="margin-top:60px; margin-bottom: 60px">
   <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>Some Links</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
+    <div class="col-sm-4" style="text-align: center">
+      <img src="img/profile.jpg" class="img-fluid" alt="Profile Picture" style="border: 5px solid; width: 100%">
+      <hr>
+      <h3>Contact me:</h3>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" id="link-cell" style="margin-top: 10px"><b>+1 (224) 200-6674</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link active" id="link" href="mailto:nosajmik@umich.edu" style="margin-top: 10px"><b>nosajmik@umich.edu</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" id="link" href="https://github.com/jasonkimprojects" style="margin-top: 10px"><b>GitHub</b></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" id="link" href="https://www.linkedin.com/in/nosajmik" style="margin-top: 10px"><b>LinkedIn</b></a>
         </li>
       </ul>
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg">Fake Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    	<div style="margin-left: 30px">
+	      <h2 style="color: #FFA500">Hi, I'm Jason!</h2>
+	      <p>For official purposes, my legal first name is Jong Sung. I go by Jason, nevertheless, for two reasons: it’s easier to pronounce, and most websites that parse my name delimit the space and call me Jong. Call me by whatever is easiest for you! My pronouns are <b>he, him, and his.</b></p>
+	      <br>
+	      <h2>I'm a Junior</h2>
+	      <p>At the University of Michigan in Ann Arbor, MI. I study Computer Science through the College of Engineering, and minor in Biology through the College of Literature, Science, and the Arts. I am passionate about cybersecurity and medical software development. (bioinformatics, computer vision and ML, databases, etc.)</p>
+	      <br>
+	      <h2>I develop</h2>
+	      <p>In C++, C, and Java proficiently. I have been picking up lots of Python recently from academic projects. Writing this website has improved my HTML and CSS skills. Some more languages that I speak here and there are Bash, MATLAB, JavaScript, SQL, and some flavors of assembly (x86, MIPS, ARMv8).</p>
+	      <br>
+	      <h2>My website</h2>
+	      <p>Is also available in 한국어 (Korean), my mother tongue alongside English, as well as Español (Spanish) which I <i>kind of</i> speak. Feel free to grab a copy of my resume or contact me through the links on the left!</p>
+	      <br>
+	      <hr>
+	      <h6><small>Background image credits: Hedaetul Islam (https://www.pexels.com/@hedaetul)</small></h6>
+	      <h6><small>Made from scratch with passion, with the help of Bootstrap for mobile and desktop compatibility.</small></h6>
     </div>
   </div>
 </div>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
-
 </body>
 </html>
