@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<title>Jason Kim</title>
+	<title>김종성</title>
 	<meta charset="utf-8">
-	<!-- Links and scripts for Bootstrap 4 -->
+	<!-- Bootstrap 4를 위한 링크와 스크립트 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<!-- Link for Raleway from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<!-- Link for Julius Sans One from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<!-- 한글 폰트: 네이버 나눔고딕, 나눔명조 -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap" rel="stylesheet">
 	<style>
-		/* Raleway as default for body */
+		/* 나눔고딕을 기본으로 설정 */
 		body {
-			font-family: 'Raleway', sans-serif;
+			font-family: 'Nanum Gothic', sans-serif;
 		}
-		/* For the title text 'Jason Kim' */
+		/* 제목 폰트 */
 		.display-3 {
-			font-family: 'Julius Sans One', sans-serif;
+			font-family: 'Nanum Myeongjo', serif;
 			color: white;
 			margin-bottom: 20px;
 			margin-left: 50px;
 			margin-right: 50px;
 		}
-		/* Default and hover colors for nav links */
+		/* 제목 내비게이션 링크 */
 		.navi {
 			color: white;
 		}
 		.navi:hover {
 			color: #FFA500;
 		}
-		/* For contact links*/
+		/* 연락처 링크 */
 		.link {
 			background-color: #F5F5F5;
 			color: black;
@@ -43,7 +41,7 @@
 			color: #FFA500;
 			margin-top: 10px;
 		}
-		/* No hover and action for phone number */
+		/* 전화번호는 색깔 변동 없음 */
 		#link-cell {
 			background-color: #F5F5F5;
 			color: black;
@@ -52,7 +50,7 @@
 		.jumbotron {
 			background-color: black;
 			margin-top: -10px;
-			background-image: url("img/test.jpg");
+			background-image: url("../img/test.jpg");
 			background-size: cover;
 			text-align: center;
 			padding-bottom: 30px;
@@ -68,19 +66,19 @@
 <body>
 	<!-- Purple top jumbotron with my name and links to the three pages. -->
 	<div class="jumbotron jumbotron-fluid">
-		<h1 class="display-3">Jason Kim</h1>
+		<h1 class="display-3">金 鐘聲</h1>
 		<div class="container">
 			<div class="centered">
 				<!-- Trick to reduce bottom margin of jumbotron -->
 				<div class="row" style="margin-bottom: -10px">
 					<div class="col-sm-4">
-						<a class="nav-link navi" href="index.html" style="color: #FFA500"><h3>Information</h3></a>
+						<a class="nav-link navi" href="index-kr.html" style="color: #FFA500"><h3>자기소개</h3></a>
 					</div>
 					<div class="col-sm-4">
-						<a class="nav-link navi" href="coursework.html"><h3>Academics</h3></a>
+						<a class="nav-link navi" href="coursework-kr.html"><h3>학업 정보</h3></a>
 					</div>
 					<div class="col-sm-4">
-						<a class="nav-link navi" href="projects.html"><h3>Projects</h3></a>
+						<a class="nav-link navi" href="projects-kr.html"><h3>프로젝트</h3></a>
 					</div>
 				</div>
 			</div>
@@ -93,9 +91,9 @@
 		    <div class="col-md-4" style="text-align: center">
 		    	<!-- Trick to space out the left column from the right -->
 		    	<div class="col-md-12">
-					<img src="img/profile.JPG" class="img-fluid" alt="Profile Picture" style="border: 5px solid">
+					<img src="../img/profile.JPG" class="img-fluid" alt="Profile Picture" style="border: 5px solid">
 					<hr>
-					<h3>Contact me:</h3>
+					<h3>연락처</h3>
 					<!-- Buttons for contact info plus resume -->
 					<ul class="nav nav-pills flex-column" style="margin: auto">
 						<li class="nav-item">
@@ -105,7 +103,7 @@
 						  <a class="nav-link link" href="mailto:nosajmik@umich.edu"><b>nosajmik@umich.edu</b></a>
 						</li>
 						<li class="nav-item">
-						  <a class="nav-link link" href="files/resume.pdf" download><b>Resume</b></a>
+						  <a class="nav-link link" href="../files/resume.pdf" download><b>이력서 (영문)</b></a>
 						</li>
 						<li class="nav-item">
 						  <a class="nav-link link" href="https://github.com/jasonkimprojects"><b>GitHub</b></a>
@@ -124,32 +122,29 @@
 		    <!-- Paragraphs -->
 		    <div class="col-md-8">
 		    	<div class="col-md-12">
-					<h2 style="color: #FFA500">Hi, I'm Jason!</h2>
-					<p>For official purposes, my legal first name is Jong Sung. I go by Jason, nevertheless, for two reasons: it’s easier to pronounce, and most websites that parse my name delimit the space and call me Jong. Call me by whatever is easiest for you! My pronouns are <b>he, him, and his.</b></p>
+					<h2 style="color: #FFA500">안녕하세요, 김종성입니다.</h2>
+					<p>저는 미국 미시간 주 앤 아버 시 소재 미시간 대학교 3학년에 재학 중입니다. 전공은 본교 공과대학의 컴퓨터과학과이며, 부전공은 본교 인문자연과학대학의 생물학과입니다. 저의 학업 관련 관심사는 사이버 보안과 생물정보학, 컴퓨터 비전, 기계학습, 데이터베이스 등을 포함한 의료용 소프트웨어 개발입니다.</p>
 					<br>
-					<h2>I'm a Junior</h2>
-					<p>At the University of Michigan in Ann Arbor, MI. I study Computer Science through the College of Engineering, and minor in Biology through the College of Literature, Science, and the Arts. I am passionate about cybersecurity and medical software development. (bioinformatics, computer vision and ML, databases, etc.)</p>
+					<h2>저는 개발을</h2>
+					<p>C++, C, 그리고 Java어로 주로, 그리고 가장 오랬동안 하였습니다. 최근에는 수업 내 프로젝트 여러 가지로 Python을 많이 습득하는 중입니다. 또한 이 웹사이트를 만들며 HTML과 CSS를 복습하고 응용해 나가고 있습니다. 능숙하지는 않지만 어느 정도 지식을 가지고 있는 언어는 Bash, MATLAB, JavaScript, SQL 그리고 몇 가지 종류의 어셈블리어 (x86, MIPS, ARMv8) 가 있습니다.</p>
 					<br>
-					<h2>I develop</h2>
-					<p>In C++, C, and Java proficiently. I have been picking up lots of Python recently from academic projects. Writing this website has improved my HTML and CSS skills. Some more languages that I speak here and there are Bash, MATLAB, JavaScript, SQL, and some flavors of assembly (x86, MIPS, ARMv8).</p>
-					<br>
-					<h2>My website</h2>
-					<p>Is also available in 한국어 (Korean), my mother tongue alongside English, as well as Español (Spanish) which I <i>kind of</i> speak. Feel free to grab a copy of my resume or contact me through the links on the left!</p>
+					<h2>이 웹사이트는</h2>
+					<p>한국어와 같이 저의 모국어인 영어 (English), 그리고 중간 정도의 구사 능력이 있는 스페인어 (Español) 로도 열람하실 수 있습니다. 제 포트폴리오에 관심이 있으시다면, 화면 좌측의 링크를 통해 이력서를 내려받으시거나 연락을 주시기 바랍니다!</p>
 					<!-- Language selector buttons -->
 					<div class="container" style="text-align: center; margin-top: 50px; margin-bottom: 30px">
 						<div class="row">
 							<div class="col-md-12">
 						    	<div class="btn-group">
-						    		<a href="#" role="button" class="btn btn-light" style="color: #FFA500">English</a>
-						    		<a href="korean/index-kr.html" role="button" class="btn btn-light">한국어</a>
+						    		<a href="../index.html" role="button" class="btn btn-light">English</a>
+						    		<a href="#" role="button" class="btn btn-light" style="color: #FFA500">한국어</a>
 						    		<a href="#" role="button" class="btn btn-light">Español</a>
 						    	</div>
 						    </div>
 					    </div>
 					</div>
 					<hr>
-					<h6><small>Background image credits: Hedaetul Islam (<a href="https://www.pexels.com/@hedaetul">https://www.pexels.com/@hedaetul)</a></small></h6>
-					<h6><small>Made from scratch with passion, with the help of Bootstrap for mobile and desktop compatibility.</small></h6>
+					<h6><small>배경 이미지 저작권: Hedaetul Islam (<a href="https://www.pexels.com/@hedaetul">https://www.pexels.com/@hedaetul)</a></small></h6>
+					<h6><small>데스크탑과 모바일 화면 간 호환성을 위해 Bootstrap 프레임워크의 도움을 받아, 처음부터 시작하여 열정을 가지고 만들었습니다.</small></h6>
 		  		</div>
 		  	</div>
   		</div>

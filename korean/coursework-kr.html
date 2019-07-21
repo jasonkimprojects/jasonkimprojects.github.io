@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>김종성</title>
+	<meta charset="utf-8">
+	<!-- Bootstrap 4를 위한 링크와 스크립트 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- 한글 폰트: 네이버 나눔고딕, 나눔명조 -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&display=swap" rel="stylesheet">
+	<style>
+		/* 나눔고딕을 기본으로 설정 */
+		body {
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		/* 제목 폰트 */
+		.display-3 {
+			font-family: 'Nanum Myeongjo', serif;
+			color: white;
+			margin-bottom: 20px;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		/* 제목 내비게이션 링크 */
+		.nav-link {
+			color: white;
+		}
+		.nav-link:hover {
+			color: #FFA500;
+		}
+		.jumbotron {
+			background-color: black;
+			margin-top: -10px;
+			background-image: url("../img/test.jpg");
+			background-size: cover;
+			text-align: center;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			border-bottom: 5px solid;
+		}
+		.course {
+			margin-top: 30px;
+		}
+		.syllabus {
+			color: #FFA500;
+		}
+		.syllabus:hover {
+			color: #FFA500;
+		}
+		.centered {
+			margin: auto;
+			max-width: 700px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Purple top jumbotron with my name and links to the three pages. -->
+	<div class="jumbotron jumbotron-fluid" style="text-align: center">
+		<h1 class="display-3">金 鐘聲</h1>
+		<div class="container">
+			<div class="centered">
+				<!-- Trick to reduce bottom margin of jumbotron -->
+				<div class="row" style="margin-bottom: -10px">
+					<div class="col-sm-4">
+						<a class="nav-link" href="index-kr.html"><h3>자기소개</h3></a>
+					</div>
+					<div class="col-sm-4">
+						<a class="nav-link" href="coursework-kr.html" style="color: #FFA500"><h3>학업 정보</h3></a>
+					</div>
+					<div class="col-sm-4">
+						<a class="nav-link" href="projects-kr.html"><h3>프로젝트</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container for rows, in order to list projects -->
+	<div class="container" style="margin-top:30px; margin-bottom: 30px">
+		<div class="row">
+			<div class="col">
+				<!-- Header for coursework description -->
+				<div class="alert alert-success">
+					<p style="margin-bottom: 0px">다음은 제가 <a href="https://umich.edu" style="color: #FFA500">미시간 대학교</a> 에서 지금까지 수강한 수업의 목록입니다. 각각의 수업 하에는 그 수업의 프로그래밍 프로젝트를 나열하였습니다. 저는 미시간 대학교 공과대학의 학칙 (Honor Code) 으로 인하여 프로젝트의 소스 코드는 외부에 공개할 수 없습니다. 이로 인해 제가 학업 관련 프로젝트에 대해 공개할 수 있는 정도는 프로젝트에 대한 간단한 요약이 최대치입니다. 추가 정보를 보시려면 <a href="https://elc.engin.umich.edu/policies-and-interpretations/" style="color: #FFA500">여기</a>를 클릭하세요.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h1><b>전기공학 및 컴퓨터과학과</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>388, 컴퓨터 보안으로의 입문</h3>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs388/" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>Python 프로젝트:</b></p>
+				<ul>
+					<li><p>Vigenere 암호를 해독하는데 통계적으로 도움을 주는 프로그램. 암호문의 철자별 빈도의 분산을 계산하여 암호 키의 길이를 추정하고, 간단한 영문 철자 빈도 분석 혹은 카이제곱 테스트를 이용해 키를 추정할 수 있습니다.</p></li>
+					<li><p>MD5 해시 함수를 겨냥한 메시지 길이 확장 공격, 그리고 MD5 충돌을 이용한 공격. 해시 값이 동일하지만 행동은 전혀 다른 두 개의 바이너리를 사용했습니다.</p></li>
+					<li><p>Bleichenbacher의 공격 수법을 적용한 RSA 서명 위조.</p></li>
+					<li><p>Cipher Block Chaining 블록 암호 기법을 겨냥한 패딩 오라클 공격. TLS/SSL의 초기 버전 내 취약점을 모델로 하였습니다.</p></li>
+					<li><p>SQL 주입 공격. 필터링하지 않은 사용자의 입력과 해시된 비밀번호를 상대로 이루어졌습니다.</p></li>
+					<li><p>포트 스캐닝 감지기. dpkt 라이브러리를 사용하여 네트워크 캡쳐를 분석합니다. </p></li>
+					<li><p>C언어 프로그램 상대 버퍼 오버플로 악성코드. 셸 코드, 데이터 실행 방지와 ASLR 우회, 그리고 반환 지향형 프로그래밍 체인을 구현하였습니다.</p></li>
+					<li><p>JSON 입력을 다루는 교수진의 소스 비공개 프로그램을 대상으로 fuzzer를 개발하여 테스트하였습니다.</p></li>
+				</ul>
+				<p><b>JavaScript 및 jQuery 프로젝트:</b></p>
+				<ul>
+					<li><p>공격자 조종 서버로 사용자 데이터를 보내는 XSS 공격. 단계적으로 강화된 사용자 입력 필터를 우회하였고, CSRF 공격과 같이 개발하였습니다.</p></li>
+				</ul>
+				<p><b>기타 프로젝트 업무:</b></p>
+				<ul>
+					<li><p>Wireshark으로 네트워크 트래픽을 분석하여 취약점을 감지하였습니다.</p></li>
+					<li><p>가상의 고객센터로 피싱 이메일을 전송하였습니다.</p></li>
+					<li><p>가상 회사 네트워크를 상대로 침략 테스트를 하였고, Autopsy와 기타 툴을 사용하여 전자 감식을 하였습니다. 이 프로젝트를 완성하기 위한 기법이 다양하고 광활했음에 따라, 사용했던 도구 또는 기법은 공개할 수 없습니다.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>370, 컴퓨터 구조로의 입문</h3>
+				<p><a href="http://www.eecs.umich.edu/courses/eecs370/eecs370.s19/course/" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>C 프로젝트:</b></p>
+				<ul>
+					<li><p>이 수업에서는 LC2K라는 가상의 어셈블리어 또한 기초적인 ARMv8이 사용되었습니다. LC2K는 MIPS의 기초 명령어와 유사합니다.</p></li>
+					<li><p>고급 LC2K 어셈블러. 여러 개의 소스 파일과 외부 변수를 지원합니다. Symbol table과 relocation table을 구현하였습니다.</p></li>
+					<li><p>다수의 LC2K 소스 파일을 연결하기 위한 Linker.</p></li>
+					<li><p>파이프라인을 지원하는 LC2K 시뮬레이터. 5단계 파이프라인을 구현했으며, 데이터 위험은 forwarding으로 제어 위험은 간단한 분기 예측과 롤백으로 해결하였습니다.</p></li>
+					<li><p>LC2K를 위한 캐시 시뮬레이터. 캐시 라인 갯수, 블록 크기, 그리고 결합 규칙을 유동적으로 조절할 수 있습니다. 캐시 규칙은 writeback과 LRU를 사용합니다.</p></li>
+				</ul>
+				<p><b>어셈블리 프로젝트:</b></p>
+				<ul>
+					<li><p>LC2K를 위한 곱셈 프로그램. LC2K는 자체 곱셈 명령어가 없습니다. 이 프로그램은 연산 속도를 위해 비트 시프팅과 함께 long multiplication (손으로 하는 곱셈과 절차가 유사) 을 사용합니다.</p></li>
+					<li><p>이항 계수 계산기를 스택 프레임과 재귀 함수를 통해 구현하였습니다.</p></li>
+				</ul>
+				<p><b>기타 프로젝트 업무:</b></p>
+				<ul>
+					<li><p>상단의 프로젝트 중 대부분에서는 테스트 케이스도 필수 요소였습니다. 프로그램으로 무작위로 생성하는 방법과 엣지 케이스를 손으로 쓰는 방법을 사용하였습니다. 이 테스트 케이스들은 의도적으로 버그가 심어진 교수진 프로그램을 상대로 실행되어 버그를 발견하는 능력에 대해 평가를 받았습니다.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>281, 자료 구조 및 알고리즘</h3>
+				<p><a href="https://www.eecs.umich.edu/courses/eecs281/syllabus" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>C++ 프로젝트:</b></p>
+				<ul>
+					<li><p>영단어 변환 퍼즐을 해결하는 프로그램. 시작 단어, 끝 단어, 사전, 그리고 규칙을 입력받습니다. 스택, 큐, 그리고 deque를 사용하여 구현하였습니다.</p></li>
+					<li><p>우선순위 큐로 구현한 탄광을 탈출하는 퍼즐을 해결하는 프로그램.</p></li>
+					<li><p>이진 힙과 페어링 힙을 처음부터 구현하였습니다.</p></li>
+					<li><p>해시 테이블을 처음부터 구현하였습니다.</p></li>
+					<li><p>AVL 균형 이진 탐색 트리를 처음부터 구현하였습니다.</p></li>
+					<li><p>SQL의 기초적인 명령어를 지원하는 시뮬레이터. 해시 테이블, 행렬, 그리고 맵을 혼용해서 구현하였습니다.</p></li>
+					<li><p>최소 신장 트리 계산기와 발견법이 포함된 외판원 문제 계산기. 퇴각검색과 분기한정법 디자인을 구현하였습니다.</p></li>
+				</ul>
+				<p><b>기타 프로젝트 업무:</b></p>
+				<ul>
+					<li><p>상단의 프로젝트 중 대부분에서는 테스트 케이스도 필수 요소였습니다. 프로그램으로 무작위로 생성하는 방법과 엣지 케이스를 손으로 쓰는 방법을 사용하였습니다. 이 테스트 케이스들은 의도적으로 버그가 심어진 교수진 프로그램을 상대로 실행되어 버그를 발견하는 능력에 대해 평가를 받았습니다.</p></li>
+					<li><p>이 수업의 프로젝트는 정확성뿐만 아니라 성능에 관해서도 채점되었습니다. 계산 시간, 최대 메모리 사용량, 그리고 메모리 누수 여부가 측정되었습니다.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>280, 프로그래밍 및 기초 자료 구조</h3>
+				<p><a href="https://eecs280staff.github.io/eecs280.org/assets/Syllabus.pdf" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>C++ 프로젝트:</b></p>
+				<ul>
+					<li><p>Seam carving 알고리즘을 이용한 이미지 편집 프로그램. 기초적인 컴퓨터 비전을 포함하고 있습니다.</p></li>
+					<li><p>Euchre 카드 게임 시뮬레이터. 객체 지향 프로그래밍, 배열, 그리고 행렬을 중심으로 하는 프로젝트입니다.</p></li>
+					<li><p>역폴란드 표기법을 사용하는 계산기. 처음부터 연결 리스트와 스택을 구현하였습니다.</p></li>
+					<li><p>Log-likelihood 기반 기계학습을 사용하는 인터넷 포럼 게시글 분석기. 프로젝트 일부를 위하여 이진 탐색 트리를 처음부터 구현하였습니다. 또한, 재귀함수에 대한 연습이기도 했습니다.</p></li>
+				</ul>
+				<p><b>기타 프로젝트 업무:</b></p>
+				<ul>
+					<li><p>상단의 프로젝트 중 대부분에서는 테스트 케이스도 필수 요소였습니다. 프로그램으로 무작위로 생성하는 방법과 엣지 케이스를 손으로 쓰는 방법을 사용하였습니다. 이 테스트 케이스들은 의도적으로 버그가 심어진 교수진 프로그램을 상대로 실행되어 버그를 발견하는 능력에 대해 평가를 받았습니다.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h1><b>기초 공학과</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>101, 컴퓨터와 프로그래밍으로의 입문</h3>
+				<p><a href="https://docs.google.com/document/d/1cXFDRDQ9VSUW5-hsEE6N7_3_iCoNwm3BYiS8EA6_F7A/edit?usp=sharing" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>MATLAB 프로젝트:</b></p>
+				<ul>
+					<li><p>유한 요소 해석으로의 입문.</p></li>
+					<li><p>노이즈를 줄이기 위한 이미지 편집 및 종양 감지 알고리즘.</p></li>
+					<li><p>날씨 측정 데이터의 분석 및 플롯.</p></li>
+				</ul>
+				<p><b>Projects in C++:</b></p>
+				<ul>
+					<li><p>브레이크 계수 계산기.</p></li>
+					<li><p>간단한 언어 분석 프로그램. 주요 단어에 무게를 부여해 리뷰를 진실 혹은 거짓으로 판명하였습니다.</p></li>
+					<li><p>기초적인 (nearest neighbor algorithm) 외판원 문제를 해결하는 프로그램.</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h1><b>수학과</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row course">
+			<div class="col">
+				<h3>214, 선형대수학</h3>
+				<p><a href="http://dept.math.lsa.umich.edu/courses/214/syllabus.html" class="syllabus">강의계획서 링크 (영문)</a></p>
+				<p><b>MATLAB 프로젝트:</b></p>
+				<ul>
+					<li><p>조별 파이널 과제 - 행렬을 QR 분해하는 알고리즘 세 가지의 이론상 계산 시간과 실제 계산 시간을 비교하였습니다. 그람-슈미트 과정, 하우스홀더 과정, 그리고 기븐스 회전을 분석하였습니다.</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
