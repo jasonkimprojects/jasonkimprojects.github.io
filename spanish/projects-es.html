@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Jason Kim</title>
+	<meta charset="utf-8">
+	<!-- Links and scripts for Bootstrap 4 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- Link for Raleway from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!-- Link for Julius Sans One from Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<style>
+		/* Raleway as default for body */
+		body {
+			font-family: 'Raleway', sans-serif;
+		}
+		/* For the title text 'Jason Kim' */
+		.display-3 {
+			font-family: 'Julius Sans One', sans-serif;
+			color: white;
+			margin-bottom: 20px;
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+		/* Default and hover colors for nav links */
+		.nav-link {
+			color: white;
+		}
+		.nav-link:hover {
+			color: #FFA500;
+		}
+		.jumbotron {
+			background-color: black;
+			margin-top: -10px;
+			background-image: url("../img/header.jpg");
+			background-size: cover;
+			text-align: center;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			border-bottom: 5px solid;
+		}
+		.project {
+			margin-top: 30px;
+		}
+		.name {
+			color: #FFA500;
+		}
+		.name:hover {
+			color: #FFA500;
+		}
+		.centered {
+			margin: auto;
+			max-width: 700px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Purple top jumbotron with my name and links to the three pages. -->
+	<div class="jumbotron jumbotron-fluid" style="text-align: center">
+		<h1 class="display-3">Jason Kim</h1>
+		<div class="container">
+			<div class="centered">
+				<!-- Trick to reduce bottom margin of jumbotron -->
+				<div class="row" style="margin-bottom: -10px">
+					<div class="col-sm-4">
+						<a class="nav-link" href="index-es.html"><h3>Información</h3></a>
+					</div>
+					<div class="col-sm-4">
+						<a class="nav-link" href="coursework-es.html"><h3>Estudios</h3></a>
+					</div>
+					<div class="col-sm-4">
+						<a class="nav-link" href="projects-es.html" style="color: #FFA500"><h3>Proyectos</h3></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container for rows, in order to list projects -->
+	<div class="container" style="margin-top:30px; margin-bottom: 30px">
+		<div class="row">
+			<div class="col">
+				<!-- Header for project description -->
+				<div class="alert alert-success">
+					<p style="margin-bottom: 0px">The following is a list of my personal projects and group projects where I have contributed significantly. Their source code can be viewed <a href="https://github.com/jasonkimprojects?tab=repositories" style="color: #FFA500">here</a> in my GitHub account. Clicking on the title of each project links to its repository.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h1><b>Personal Projects</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/bitmapparser" class="name">BitmapParser (C++)</a></h3>
+				<h6>
+					<span class="badge badge-light">Library</span> 
+					<span class="badge badge-light">File I/O</span> 
+					<span class="badge badge-light">Image processing</span> 
+					<span class="badge badge-light">Data structures</span> 
+					<span class="badge badge-light">Error handling</span> 
+					<span class="badge badge-light">Object oriented programming</span>
+				</h6>
+				<p>A short library for bitmap image reading and writing. Contains basic image editing functions (reflection, transposition, rotation, crop, superimpose, color filters). Useful for extracting pixels and their RGB values as vectors of structs of plain old data.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/easylsb" class="name">EasyLSB (C++)</a></h3>
+				<h6>
+					<span class="badge badge-light">Steganography</span> 
+					<span class="badge badge-light">Least significant bit</span> 
+					<span class="badge badge-light">Bit manipulation</span> 
+					<span class="badge badge-light">Error handling</span> 
+					<span class="badge badge-light">Inheritance</span> 
+					<span class="badge badge-light">Custom iterator</span>
+				</h6>
+				<p>A program for encoding and decoding text messages inside bitmap images using least significant bit steganography. Results in little to no visible difference in the image. Includes my BitmapParser library.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/jasonkimprojects.github.io" class="name">jasonkimprojects.github.io (HTML, CSS, Bootstrap)</a></h3>
+				<p>This website. Contains links to my GitHub and LinkedIn profile and resume. Overview of my academic and personal work.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/htc-evo-4gplus-evolved" class="name">Evo(lved) (Android)</a></h3>
+				<h6>
+					<span class="badge badge-light">Custom firmware</span> 
+					<span class="badge badge-light">Scripting</span> 
+					<span class="badge badge-light">Linux</span> 
+					<span class="badge badge-light">Optimization</span>
+				</h6>
+				<p>ROM for my first smartphone, the HTC Evo 4G+. Android 2.3 Gingerbread based on stock firmware.</p>
+			</div>
+		</div>		
+		<div class="row project">
+			<div class="col">
+				<h1><b>Group Projects</b></h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/2048-and-pong-from-scratch" class="name">2048 (Java, Swing)</a></h3>
+				<h6>
+					<span class="badge badge-light">Games</span> 
+					<span class="badge badge-light">Matrix operations</span> 
+					<span class="badge badge-light">GUI programming</span> 
+					<span class="badge badge-light">Listeners</span>
+				</h6>
+				<p>First part of AP Computer Science final project during high school. Replica of the original game built from scratch. Exercise for graphics with the Swing widget toolkit and listening to keyboard inputs.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/2048-and-pong-from-scratch" class="name">Pong (Java, Swing)</a></h3>
+				<h6>
+					<span class="badge badge-light">Games</span> 
+					<span class="badge badge-light">GUI programming</span> 
+					<span class="badge badge-light">Listeners</span>
+				</h6>
+				<p>Second part of AP Computer Science final project during high school. Replica of the original game, also built from scratch. Another exercise for making graphical games and handling keyboard input.</p>
+			</div>
+		</div>
+		<div class="row project">
+			<div class="col">
+				<h3><a href="https://github.com/jasonkimprojects/java-blackjack" class="name">Blackjack (Java)</a></h3>
+				<h6>
+					<span class="badge badge-light">Object oriented programming</span> 
+					<span class="badge badge-light">Testing</span> 
+					<span class="badge badge-light">Data structures</span> 
+					<span class="badge badge-light">Exception handling</span>
+				</h6>
+				<p>Yet another AP Computer Science project, and the first game I made from scratch. Played on the command line, and supports multiple human players as well as naive computer players.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
