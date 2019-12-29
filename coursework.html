@@ -87,9 +87,6 @@
 				<div class="alert alert-success">
 					<p style="margin-bottom: 0px">The following is a list of the courses I have taken at the <a href="https://umich.edu" style="color: #FFA500">University of Michigan.</a> I have listed programming projects alongside each course where applicable. I am bound by the Engineering Honor Code at U-M not to release those projects to the public. Consequently, a brief description of the work is the furthest extent that I am able to disclose. For more information, click <a href="https://elc.engin.umich.edu/policies-and-interpretations/" style="color: #FFA500">here.</a></p>
 				</div>
-				<div class="alert alert-warning">
-					<p style="margin-bottom: 0px">I am currently enrolled in EECS 376 (Foundations of Computer Science) and EECS 485 (Web Systems) for this Fall 2019 semester. I will update this page with project work in these courses after I have completed them.</p>
-				</div>
 			</div>
 		</div>
 		<div class="row course">
@@ -98,6 +95,42 @@
 				<hr>
 			</div>
 		</div>
+    <div class="row course">
+      <div class="col">
+        <h3>485, Web Systems</h3>
+        <p><a href="https://eecs485staff.github.io/eecs485.org/assets/Syllabus.pdf" class="syllabus">Link to syllabus</a></p>
+        <p>
+          <b>Projects in Python:</b>
+        </p>
+        <ul>
+          <li>
+            <p>
+              Static templated clone of Instagram as an exercise in parsing JSON and writing jinja2 templates.
+            </p>
+          </li>
+          <li>
+            <p>
+              Server-side clone of Instagram based on the previous project. Integrated databases with SQLite3, which made it possible to create user accounts and new posts. Handled server-side processing with Python/Flask.
+            </p>
+          </li>
+          <li>
+            <p>
+              Client-side extension of the Instagram clone. Completely redesigned the main feed with React and an additional REST API on the server. This made infinite scrolling possible as well as likes and comments updating in real time.
+            </p>
+          </li>
+          <li>
+            <p>
+              MapReduce master and worker interface compatible with Apache Hadoop. Exercise with sockets and multithreaded programming. Implemented heartbeats and fault tolerance.
+            </p>
+          </li>
+          <li>
+            <p>
+              Wikipedia search engine. Implemented a MapReduce pipeline to create an inverted index from a list of documents. The search engine consists of two servers, one for storing the inverted index in an efficient data structure and another for serving search queries. Both used REST APIs, one of which the front end implemented in React relied on to fetch information.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
 		<div class="row course">
 			<div class="col">
 				<h3>388, Introduction to Computer Security</h3>
