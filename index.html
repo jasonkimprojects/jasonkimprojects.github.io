@@ -1,150 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Jason Kim</title>
-	<meta charset="utf-8">
-	<!-- Links and scripts for Bootstrap 4 -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-	<!-- Link for Raleway from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-	<!-- Link for Julius Sans One from Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-	<style>
-		/* Raleway as default for body */
-		body {
-			font-family: 'Raleway', sans-serif;
-		}
-		/* For the title text 'Jason Kim' */
-		.display-3 {
-			font-family: 'Julius Sans One', sans-serif;
-			color: white;
-			margin-bottom: 20px;
-			margin-left: 50px;
-			margin-right: 50px;
-		}
-		/* Default and hover colors for nav links */
-		.navi {
-			color: white;
-		}
-		.navi:hover {
-			color: #FFA500;
-		}
-		/* For contact links*/
-		.link {
-			background-color: #F5F5F5;
-			color: black;
-			margin-top: 10px;
-		}
-		.link:hover {
-			color: #FFA500;
-			margin-top: 10px;
-		}
-		/* No hover and action for phone number */
-		#link-cell {
-			background-color: #F5F5F5;
-			color: black;
-			margin-top: 10px;
-		}
-		.jumbotron {
-			background-color: black;
-			margin-top: -10px;
-			background-image: url("img/header.jpg");
-			background-size: cover;
-			text-align: center;
-			padding-bottom: 30px;
-			padding-top: 30px;
-			border-bottom: 5px solid;
-		}
-		.centered {
-			margin: auto;
-			max-width: 700px;
-		}
-		a {
-			color: #d18a06;
-		}
-		a:hover {
-			color: #ffa500;
-		}
-	</style>
-</head>
-<body>
-	<!-- Purple top jumbotron with my name and links to the three pages. -->
-	<div class="jumbotron jumbotron-fluid">
-		<h1 class="display-3">Jason Kim</h1>
-		<div class="container">
-			<div class="centered">
-				<!-- Trick to reduce bottom margin of jumbotron -->
-				<div class="row" style="margin-bottom: -10px">
-					<div class="col-sm-4">
-						<a class="nav-link navi" href="index.html" style="color: #FFA500"><h3>Information</h3></a>
-					</div>
-					<div class="col-sm-4">
-						<a class="nav-link navi" href="coursework.html"><h3>Academics</h3></a>
-					</div>
-					<div class="col-sm-4">
-						<a class="nav-link navi" href="projects.html"><h3>Workshop</h3></a>
+
+	<head>
+		<title>Jason Kim</title>
+		<meta charset="utf-8">
+
+		<!-- Bootstrap 4 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+			integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+			crossorigin="anonymous"></script>
+
+		<!-- Font Awesome -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"
+			rel="stylesheet">
+
+		<!-- Raleway from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+		<!-- Julius Sans One from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+		<style>
+			/* Raleway as default for body */
+			body {
+				font-family: 'Raleway', sans-serif;
+				background-color: black;
+				color: white;
+			}
+
+			a {
+				color: #ffa500;
+			}
+
+			a:hover {
+				color: #ffa500;
+			}
+
+			.btn {
+				color: #ffa500;
+			}
+
+			.btn:hover {
+				color: #ffa500;
+			}
+
+			.fa {
+				color: #ffa500 !important;
+			}
+
+			.bg-warning {
+				background-color: #ffa500 !important;
+			}
+
+			.card {
+				background-color: black;
+				color: white;
+			}
+
+			.row {
+				margin-top: 30px;
+			}
+
+			i {
+				margin-right: 10px;
+			}
+
+			h2 {
+				padding-top: 20px;
+			}
+
+			h4 {
+				padding-top: 20px;
+			}
+
+			li {
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm bg-warning navbar-light sticky-top">
+			<a class="navbar-brand" href="index.html">https://jasonkim.page/</a>
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Photography</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+			<!-- PFP -->
+			<div class="row">
+				<div class="card mx-auto" style="width: 300px;">
+					<h1 class="card-title mx-auto">Jason Kim</h1>
+					<h5 class="card-title mx-auto">김종성</h5>
+					<img class="card-img-top" src="img/nosajmik.jpg " alt="Profile Picture"
+						style="border-radius: 20px; margin-top: 20px;">
+				</div>
+			</div>
+
+			<!-- Contact buttons -->
+			<div class="row">
+				<div class="btn-group mx-auto" role="group">
+					<button type="button" class="btn btn-secondary"><i class="fa fa-graduation-cap"
+							aria-hidden="true"></i><a target="_blank" href="files/jasonkim-cv.pdf">Curriculum Vitae</a></button>
+					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
+					<button type="button" class="btn btn-secondary"><i class="fa fa-github"
+							aria-hidden="true"></i><a target="_blank" href="https://github.com/jasonkimprojects">GitHub</a></button>
+					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
+					<button type="button" class="btn btn-secondary"><i class="fa fa-linkedin-square"
+							aria-hidden="true"></i><a target="_blank" href="https://linkedin.com/in/nosajmik">LinkedIn</a></button>
+				</div>
+			</div>
+
+			<!-- Text -->
+			<div class="row">
+				<div class="col">
+					<div class="col-md-12">
+						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> whoami</h4>
+						<p>Hello! My name is Jason, and I am a first-year PhD student in the <a href="https://scp.cc.gatech.edu">School of Cybersecurity and Privacy</a> at <a href="https://www.gatech.edu/">Georgia Tech</a>, fortunate to be advised by Prof. <a href="https://www.cc.gatech.edu/~genkin/">Daniel Genkin</a>. I graduated from the <a href="https://umich.edu">University of Michigan</a> in May 2021 with my bachelor's degree in computer science, where I worked on projects with Daniel and Prof. <a href="https://kjleach.eecs.umich.edu">Kevin Leach</a>.</p>
+
+						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> cat research.txt</h4>
+						<p>Broadly, I am interested in side channel attacks and their applications. Rather than attacking the algorithms of a computer system, I find ways to break computers by taking advantage of subtleties that arise from how they are designed and implemented. More recently, I am working on breaking in-browser countermeasures against microprocessor side channels, and how such channels can be <strike>abused</strike> applied to compromise privacy and anonymity on the Internet. Quoting my advisor: they make, we break!</p>
+
+						<p>Before side channels, I worked on machine learning models for binary analysis, network security and intrusion detection systems, and a little bit of bioinformatics alongside my undergraduate minor in biology. I was also on the course staff of Michigan's <a href="https://eecs388.org">computer security course</a> for two years as a teaching assistant.</p>
+
+						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> cat misc.txt</h4>
+						<p>When I am not working on side channels, I enjoy cooking, watching movies, and going on a hike or road trip. Ever since I got a Google Pixel as my phone (and free unlimited Google Photos storage as a result), I have been taking pictures of nice scenery or objects, printing them, and framing them on my wall.</p>
+
+						<p>You can find me on floor 10 of the Coda Building, at 756 W Peachtree St NW, Atlanta, GA 30308 - or reach me at nosajmik (at) gatech (dot) edu. That's kimjason spelled backwards, and originally was my username at Michigan.</p>
+
+						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> ls publications/</h4>
+						<ul>
+							<li>Ayush Agarwal, Sioli O'Connell, <u>Jason Kim</u>, Shaked Yehezkel, Daniel Genkin, Eyal Ronen, and Yuval Yarom.<br>
+								Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution.<br>
+								To appear in IEEE Symposium on Security and Privacy (S&P) 2022.<br>
+								<div class="btn-group mx-auto" role="group" style="margin-top: 10px;">
+									<button type="button" class="btn btn-secondary"><i class="fa fa-globe"
+											aria-hidden="true"></i><a target="_blank" href="https://www.spookjs.com">Website</a></button>
+									<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
+									<button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o"
+											aria-hidden="true"></i><a target="_blank" href="https://www.spookjs.com/files/spook-js.pdf">Paper (PDF)</a></button>
+								</div>
+							</li>
+							<li><u>Jason Kim</u>, Daniel Genkin, and Kevin Leach.<br>SToPR: Swift Toolchain Provenance Recovery of ARM Program Binaries.<br>Revision in progress.<br></li>
+						</ul>
+
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Rest of webpage -->
-	<div class="container" style="margin-top:30px; margin-bottom: 60px">
-	  	<div class="row">
-	  		<!-- Profile picture and contact me -->
-		    <div class="col-md-4" style="text-align: center">
-		    	<!-- Trick to space out the left column from the right -->
-		    	<div class="col-md-12">
-					<img src="img/profile.jpeg" class="img-fluid" alt="Profile Picture" style="border: 5px solid">
-					<hr>
-					<h3>Contact me:</h3>
-					<!-- Buttons for contact info plus CV -->
-					<ul class="nav nav-pills flex-column" style="margin: auto">
-						<li class="nav-item">
-						  <a class="nav-link link" href="mailto:nosajmik@gatech.edu"><b>nosajmik@gatech.edu</b></a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link link" href="files/cv.pdf" download><b>Curriculum Vitae</b></a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link link" href="https://github.com/jasonkimprojects"><b>GitHub</b></a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link link" href="https://www.linkedin.com/in/nosajmik"><b>LinkedIn</b></a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link link" href="https://keybase.io/nosajmik"><b>Keybase</b></a>
-						</li>
-					</ul>
-					<!-- Only show line on small screens -->
-					<hr class="d-md-none" style="margin-bottom: 30px">
-				</div>
-		    </div>
-		    <!-- Paragraphs -->
-		    <div class="col-md-8">
-		    	<div class="col-md-12">
-					<h2 style="color: #FFA500">Hi, I'm Jason!</h2>
-					<p>For official purposes, my legal first name is Jong Sung. I go by Jason, nevertheless, for two reasons: it’s easier to pronounce, and most websites that parse my name delimit the space and call me Jong. Call me by whatever is easiest for you! My pronouns are <b>he, him, and his.</b></p>
-					<br>
 
-					<h2>I am a...</h2>
-					<p>First year PhD student at <a href="https://www.gatech.edu/">Georgia Tech</a>, advised by Prof. <a href="https://www.cc.gatech.edu/~genkin/">Daniel Genkin</a>. I am working on side-channel attacks, most recently on mounting <a href="https://spectreattack.com/">Spectre</a> on Google Chrome in spite of its several countermeasures. Prior to Georgia Tech, I earned my bachelor's degree at the <a href="https://umich.edu/">University of Michigan</a>.</p>
+	</body>
 
-					<br>
-
-					<h2>My apologies</h2>
-					<p>For the mess that is my website currently. This was my site from undergrad which had been neglected for over a year, and it has been an incredibly busy start to graduate school. I will have a proper website up soon, but almost everything that you see here is grossly outdated.</p>
-					<br>
-
-					<hr>
-					<h6><small>Background image credits: Hedaetul Islam (<a href="https://www.pexels.com/@hedaetul">https://www.pexels.com/@hedaetul)</a></small></h6>
-					<h6><small>Made from scratch with passion, with the help of Bootstrap for mobile and desktop compatibility.</small></h6>
-		  		</div>
-		  	</div>
-  		</div>
-	</div>
-</body>
 </html>
