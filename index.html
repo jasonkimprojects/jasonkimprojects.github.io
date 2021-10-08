@@ -42,6 +42,15 @@
 				color: #ffa500;
 			}
 
+			.mybtn {
+				color: #ffa500 !important;
+			}
+
+			a:hover, a:active, a:visited, a:focus {
+				outline: none !important;
+				box-shadow: none !important;
+			}
+
 			.btn {
 				color: #ffa500;
 			}
@@ -98,7 +107,7 @@
 					<a class="nav-link" href="#">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Photography</a>
+					<a class="nav-link" href="photography.html">Photography</a>
 				</li>
 			</ul>
 		</nav>
@@ -117,14 +126,14 @@
 			<!-- Contact buttons -->
 			<div class="row">
 				<div class="btn-group mx-auto" role="group">
-					<button type="button" class="btn btn-secondary"><i class="fa fa-graduation-cap"
-							aria-hidden="true"></i><a target="_blank" href="files/jasonkim-cv.pdf">Curriculum Vitae</a></button>
+					<a target="_blank" href="files/jasonkim-cv.pdf" class="btn btn-secondary mybtn" role="button"><i class="fa fa-graduation-cap"
+						aria-hidden="true"></i>Curriculum Vitae</a>
 					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-					<button type="button" class="btn btn-secondary"><i class="fa fa-github"
-							aria-hidden="true"></i><a target="_blank" href="https://github.com/jasonkimprojects">GitHub</a></button>
+					<a target="_blank" href="https://github.com/jasonkimprojects" class="btn btn-secondary mybtn" role="button"><i class="fa fa-github"
+						aria-hidden="true"></i>GitHub</a>
 					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-					<button type="button" class="btn btn-secondary"><i class="fa fa-linkedin-square"
-							aria-hidden="true"></i><a target="_blank" href="https://linkedin.com/in/nosajmik">LinkedIn</a></button>
+					<a target="_blank" href="https://linkedin.com/in/nosajmik" class="btn btn-secondary mybtn" role="button"><i class="fa fa-linkedin-square"
+						aria-hidden="true"></i>LinkedIn</a>
 				</div>
 			</div>
 
@@ -151,11 +160,11 @@
 								Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution.<br>
 								To appear in IEEE Symposium on Security and Privacy (S&P) 2022.<br>
 								<div class="btn-group mx-auto" role="group" style="margin-top: 10px;">
-									<button type="button" class="btn btn-secondary"><i class="fa fa-globe"
-											aria-hidden="true"></i><a target="_blank" href="https://www.spookjs.com">Website</a></button>
+									<a target="_blank" href="https://www.spookjs.com" class="btn btn-secondary mybtn" role="button"><i class="fa fa-globe"
+										aria-hidden="true"></i>Website</a>
 									<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-									<button type="button" class="btn btn-secondary"><i class="fa fa-file-pdf-o"
-											aria-hidden="true"></i><a target="_blank" href="https://www.spookjs.com/files/spook-js.pdf">Paper (PDF)</a></button>
+									<a target="_blank" href="https://www.spookjs.com/files/spook-js.pdf" class="btn btn-secondary mybtn" role="button"><i class="fa fa-file-pdf-o"
+										aria-hidden="true"></i>Paper (PDF)</a>
 								</div>
 							</li>
 							<li class="pub"><u>Jason Kim</u>, Daniel Genkin, and Kevin Leach.<br>SToPR: Swift Toolchain Provenance Recovery of ARM Program Binaries.<br>Revision in progress.<br></li>
