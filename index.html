@@ -23,53 +23,26 @@
 		<!-- Raleway from Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-		<!-- Julius Sans One from Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
-
 		<style>
 			/* Raleway as default for body */
 			body {
 				font-family: 'Raleway', sans-serif;
-				background-color: black;
-				color: white;
+			}
+
+			h1 {
+				color: #0088ff;
 			}
 
 			a {
-				color: #ffa500;
-			}
-
-			a:hover {
-				color: #ffa500;
-			}
-
-			.mybtn {
-				color: #ffa500 !important;
-			}
-
-			a:hover, a:active, a:visited, a:focus {
-				outline: none !important;
-				box-shadow: none !important;
-			}
-
-			.btn {
-				color: #ffa500;
-			}
-
-			.btn:hover {
-				color: #ffa500;
+				color: #0088ff;
 			}
 
 			.fa {
-				color: #ffa500 !important;
-			}
-
-			.bg-warning {
-				background-color: #ffa500 !important;
+				color: #0088ff !important;
 			}
 
 			.card {
-				background-color: black;
-				color: white;
+				border-color: transparent;
 			}
 
 			.row {
@@ -95,29 +68,11 @@
 	</head>
 
 	<body>
-
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-sm bg-warning navbar-light sticky-top">
-			<a class="navbar-brand" href="index.html">https://jasonkim.page/</a>
-			<ul class="nav navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="projects.html">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="photography.html">Photography</a>
-				</li>
-			</ul>
-		</nav>
-
 		<div class="container" style="margin-top: 50px; margin-bottom: 50px;">
 			<!-- PFP -->
 			<div class="row">
 				<div class="card mx-auto" style="width: 400px;">
 					<h1 class="card-title mx-auto">Jason Kim</h1>
-					<h5 class="card-title mx-auto">김종성</h5>
 					<img class="card-img-top" src="img/gradpic.jpg " alt="Profile Picture"
 						style="border-radius: 20px; margin-top: 20px;">
 				</div>
@@ -126,14 +81,14 @@
 			<!-- Contact buttons -->
 			<div class="row">
 				<div class="btn-group mx-auto" role="group">
-					<a target="_blank" href="files/jasonkim-cv.pdf" class="btn btn-secondary mybtn" role="button"><i class="fa fa-graduation-cap"
-						aria-hidden="true"></i>Curriculum Vitae</a>
+					<a target="_blank" href="files/jasonkim-cv.pdf" class="btn btn-secondary mybtn" role="button"><i
+							class="fa fa-graduation-cap" aria-hidden="true"></i>Curriculum Vitae</a>
 					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-					<a target="_blank" href="https://github.com/jasonkimprojects" class="btn btn-secondary mybtn" role="button"><i class="fa fa-github"
-						aria-hidden="true"></i>GitHub</a>
+					<a target="_blank" href="https://github.com/jasonkimprojects" class="btn btn-secondary mybtn"
+						role="button"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
 					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-					<a target="_blank" href="https://linkedin.com/in/nosajmik" class="btn btn-secondary mybtn" role="button"><i class="fa fa-linkedin-square"
-						aria-hidden="true"></i>LinkedIn</a>
+					<a target="_blank" href="https://linkedin.com/in/nosajmik" class="btn btn-secondary mybtn"
+						role="button"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
 				</div>
 			</div>
 
@@ -141,40 +96,62 @@
 			<div class="row">
 				<div class="col">
 					<div class="col-md-12">
-						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> whoami</h4>
-						<p>Hello! My name is Jason, and I am a first-year PhD student in the <a href="https://scp.cc.gatech.edu">School of Cybersecurity and Privacy</a> at <a href="https://www.gatech.edu/">Georgia Tech</a>, fortunate to be advised by Prof. <a href="https://www.cc.gatech.edu/~genkin/">Daniel Genkin</a>. I graduated from the <a href="https://umich.edu">University of Michigan</a> in May 2021 with my bachelor's degree in computer science, where I worked on projects with Daniel and Prof. <a href="https://kjleach.eecs.umich.edu">Kevin Leach</a>.</p>
+						<h4 style="color: #0088ff"><small>nosajmik@gatech-scp:~$</small> whoami</h4>
+						<p>Hello! My name is Jason, and I am a first-year PhD student in the <a
+								href="https://scp.cc.gatech.edu">School of Cybersecurity and Privacy</a> at <a
+								href="https://www.gatech.edu/">Georgia Tech</a>, fortunate to be advised by Prof. <a
+								href="https://www.cc.gatech.edu/~genkin/">Daniel Genkin</a>. I graduated from the <a
+								href="https://umich.edu">University of Michigan</a> in May 2021 with my bachelor's
+							degree in computer science, where I worked on projects with Daniel and Prof. <a
+								href="https://kjleach.eecs.umich.edu">Kevin Leach</a>.</p>
 
-						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> cat research.txt</h4>
-						<p>Broadly, I am interested in side channel attacks and their applications. Rather than attacking the algorithms of a computer system, I find ways to break computers by taking advantage of subtleties that arise from how they are designed and implemented. More recently, I am working on breaking in-browser countermeasures against microprocessor side channels, and how such channels can be <strike>abused</strike> applied to compromise privacy and anonymity on the Internet. Quoting my advisor: they make, we break!</p>
+						<h4 style="color: #0088ff"><small>nosajmik@gatech-scp:~$</small> cat research.txt</h4>
+						<p>Broadly, I am interested in side channel attacks and their applications. Rather than
+							attacking the algorithms of a computer system, I find ways to break computers by taking
+							advantage of subtleties that arise from how they are designed and implemented. More
+							recently, I am working on breaking in-browser countermeasures against microprocessor side
+							channels, and how such channels can be <strike>abused</strike> applied to compromise privacy
+							and anonymity on the Internet. Quoting my advisor: they make, we break!</p>
 
-						<p>Before side channels, I worked on machine learning models for binary analysis, network security and intrusion detection systems, and a little bit of bioinformatics alongside my undergraduate minor in biology. I was also on the course staff of Michigan's <a href="https://eecs388.org">computer security course</a> for two years as a teaching assistant.</p>
+						<p>Before side channels, I worked on machine learning models for binary analysis, network
+							security and intrusion detection systems, and a little bit of bioinformatics alongside my
+							undergraduate minor in biology. I was also on the course staff of Michigan's <a
+								href="https://eecs388.org">computer security course</a> for two years as a teaching
+							assistant.</p>
 
-						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> cat misc.txt</h4>
-						<p>When I am not working on side channels, I enjoy cooking, watching movies, and going on a hike or road trip. Ever since I got a Google Pixel as my phone (and free unlimited Google Photos storage as a result), I have been taking pictures of nice scenery or objects, printing them, and framing them on my wall.</p>
+						<h4 style="color: #0088ff"><small>nosajmik@gatech-scp:~$</small> cat misc.txt</h4>
+						<p>When I am not working on side channels, I enjoy cooking, watching movies, and going on a hike
+							or road trip. Ever since I got a Google Pixel as my phone (and free unlimited Google Photos
+							storage as a result), I have been taking pictures of nice scenery or objects, printing them,
+							and framing them on my wall.</p>
 
-						<p>You can find me on floor 10 of the Coda Building, at 756 W Peachtree St NW, Atlanta, GA 30308 - or reach me at nosajmik (at) gatech (dot) edu. That's kimjason spelled backwards, and originally was my username at Michigan.</p>
+						<p>You can find me on floor 10 of the Coda Building, at 756 W Peachtree St NW, Atlanta, GA 30308
+							- or reach me at nosajmik (at) gatech (dot) edu. That's kimjason spelled backwards, and
+							originally was my username at Michigan.</p>
 
-						<h4 style="color: #FFA500"><small>nosajmik@gatech-scp:~$</small> ls publications/</h4>
+						<h4 style="color: #0088ff"><small>nosajmik@gatech-scp:~$</small> ls publications/</h4>
 						<ul>
-							<li class="pub">Ayush Agarwal, Sioli O'Connell, <u>Jason Kim</u>, Shaked Yehezkel, Daniel Genkin, Eyal Ronen, and Yuval Yarom.<br>
+							<li class="pub">Ayush Agarwal, Sioli O'Connell, <u>Jason Kim</u>, Shaked Yehezkel, Daniel
+								Genkin, Eyal Ronen, and Yuval Yarom.<br>
 								Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution.<br>
 								To appear in IEEE Symposium on Security and Privacy (S&P) 2022.<br>
 								<div class="btn-group mx-auto" role="group" style="margin-top: 10px;">
-									<a target="_blank" href="https://www.spookjs.com" class="btn btn-secondary mybtn" role="button"><i class="fa fa-globe"
-										aria-hidden="true"></i>Website</a>
-									<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
-									<a target="_blank" href="https://www.spookjs.com/files/spook-js.pdf" class="btn btn-secondary mybtn" role="button"><i class="fa fa-file-pdf-o"
-										aria-hidden="true"></i>Paper (PDF)</a>
+									<a target="_blank" href="https://www.spookjs.com" class="btn btn-secondary mybtn"
+										role="button"><i class="fa fa-globe" aria-hidden="true"></i>Website</a>
+									<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0"
+										disabled></button>
+									<a target="_blank" href="https://www.spookjs.com/files/spook-js.pdf"
+										class="btn btn-secondary mybtn" role="button"><i class="fa fa-file-pdf-o"
+											aria-hidden="true"></i>Paper (PDF)</a>
 								</div>
 							</li>
-							<li class="pub"><u>Jason Kim</u>, Daniel Genkin, and Kevin Leach.<br>SToPR: Swift Toolchain Provenance Recovery of ARM Program Binaries.<br>Revision in progress.<br></li>
+							<li class="pub"><u>Jason Kim</u>, Daniel Genkin, and Kevin Leach.<br>SToPR: Swift Toolchain
+								Provenance Recovery of ARM Program Binaries.<br>Revision in progress.<br></li>
 						</ul>
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</body>
 
 </html>
