@@ -5,6 +5,14 @@
 		<title>Jason Kim</title>
 		<meta charset="utf-8">
 
+		<!-- jQuery and Popper.js -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+
 		<!-- Bootstrap 4 -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
@@ -77,8 +85,16 @@
 			<!-- Contact buttons -->
 			<div class="row">
 				<div class="btn-group mx-auto" role="group">
-					<a target="_blank" href="files/jasonkim-cv.pdf" class="btn btn-secondary mybtn" role="button"><i
-							class="fa fa-graduation-cap" aria-hidden="true"></i>CV</a>
+					<div class="btn-group" role="group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>CV
+						</button>
+						<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+							<a href="files/jasonkim-cv-academic.pdf" class="dropdown-item">Academic</a>
+							<a href="files/jasonkim-cv-industry.pdf" class="dropdown-item">Industry</a>
+						</div>
+					</div>
 					<button type="button" class="btn btn-secondary mr-0 ml-0 pr-0 pl-0" disabled></button>
 					<a target="_blank" href="https://github.com/nosajmik" class="btn btn-secondary mybtn"
 						role="button"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
@@ -110,13 +126,44 @@
 								href="https://kjl.name/">Kevin Leach</a>.
 						</p>
 
-						<p><b>I am on the job market, targeting a start date in Spring 2026. I am interested in both academic and industry paths - if you are hiring, please send me an email or a LinkedIn message!</b></p>
+						<p><b>I am on the job market, targeting a start date in Spring 2026. I am interested in both
+								academic and industry paths - if you are hiring, please send me an email or a LinkedIn
+								message!</b></p>
 
 						<h4 style="color: #0088ff"><small>nosajmik@gthwsec:~$</small> cat research.txt</h4>
-						<p>I am interested in offensive hardware security and microarchitectural side-channels. My work is to scrutinize
-							exotic optimizations in new hardware, and investigate if these optimizations can inadvertently undermine security. More specifically, I focus on recent heavyweight Arm SoCs and
-							the
-							side-channel resilience of web browser engines.</p>
+
+						<p>I am interested in offensive hardware security and microarchitectural side-channels. Amid the
+							everlasting pursuit for computing performance, I study the implications of low-level
+							hardware optimizations on protecting information stored in high-level applications, all the
+							way through the layers of abstraction. More specifically, I am curious about how
+							cutting-edge processors affect the security of web browsers, which have become a gold mine
+							for users' credentials and sensitive information.</p>
+
+						<p>Through my research, I have developed an understanding of microarchitecture, operating
+							systems, and execution engines in web browsers by observing how they affect each other. This
+							analysis starts with benchmarks for reverse engineering or RTL simulation and dataflow
+							graphs, and ends with memory allocator exploitation and proof-of-concept construction. My
+							work has prompted patches in the process model, rendering engine, and data structure
+							placement in Apple Safari, which is also the sole allowed framework for all iPhone and iPad
+							web browser apps. On Google Chrome, my work has resulted in patches to the extension
+							mechanism, developer tools, and compromised password detection schemes.</p>
+
+						<p>Most recently, I expanded my interests to hardware defenses, namely white-box
+							microarchitectural security analyses that augment traditional verification techinques for
+							processor designs. This was
+							made possible by a research internship at <a href="https://siliconassurance.com/">Silicon
+								Assurance</a>. Finally, positively impacting the security of billions of users' devices
+							has been my motivation for
+							pursuing a Ph.D., and thus I hope to continue meaningful work of a similar ethos after
+							graduation.</p>
+
+						<h4 style=" color: #0088ff"><small>nosajmik@gthwsec:~$</small> cat misc.txt</h4>
+						<p>Outside of work, I enjoy cooking, movies, hiking, traveling, road tripping, working
+							on cars, tubing/boating near Atlanta, and discovering new restaurants and bars.</p>
+
+						<p>My desk is at Suite E0952J of the Coda Building, at 756 W Peachtree St NW, Atlanta,
+							GA 30308, and my email is nosajmik (at) gatech (dot) edu. That's kimjason spelled
+							backwards, and originally was my username at Michigan.</p>
 
 						<p>Before side channels, I worked on machine learning models for binary analysis, network
 							security and intrusion detection systems, and a little bit of bioinformatics alongside my
@@ -125,17 +172,7 @@
 							assistant, and brought components of it over to Georgia Tech's <a
 								href="https://gtinfosec.org/"">Introduction to Information Security</a> over a year's tenure.</p>
 
-						<p>Most recently, I expanded my interests to hardware defenses, namely white-box microarchitectural security analyses through RTL simulation and static methods. This was made possible by a research internship at <a href="https://siliconassurance.com/">Silicon Assurance</a>.</p>
-
-						<h4 style=" color: #0088ff"><small>nosajmik@gthwsec:~$</small> cat misc.txt</h4>
-								<p>Outside of work, I enjoy cooking, movies, hiking, traveling, road tripping, working
-									on cars, tubing/boating near Atlanta, and discovering new restaurants and bars.</p>
-
-								<p>My desk is at Suite E0952J of the Coda Building, at 756 W Peachtree St NW, Atlanta,
-									GA 30308, and my email is nosajmik (at) gatech (dot) edu. That's kimjason spelled
-									backwards, and originally was my username at Michigan.</p>
-
-								<h4 style="color: #0088ff"><small>nosajmik@gthwsec:~$</small> ls publications/</h4>
+								<h4 style=" color: #0088ff"><small>nosajmik@gthwsec:~$</small> ls publications/</h4>
 								<ul>
 									<li class="pub">
 										<u>Jason Kim</u>, Jalen Chuang, Daniel Genkin, and Yuval Yarom.<br>
@@ -154,7 +191,8 @@
 									</li>
 									<li class="pub">
 										<u>Jason Kim</u>, Daniel Genkin, and Yuval Yarom.<br>
-										<b>SLAP: Data Speculation Attacks via Load Address Prediction on Apple Silicon.</b><br>
+										<b>SLAP: Data Speculation Attacks via Load Address Prediction on Apple
+											Silicon.</b><br>
 										IEEE Symposium on Security and Privacy (S&P), 2025.<br>
 										Distinguished Paper Award.<br>
 										<div class="btn-group mx-auto" role="group" style="margin-top: 10px;">
